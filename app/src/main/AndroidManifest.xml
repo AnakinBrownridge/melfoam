@@ -6,7 +6,10 @@
         android:label="Melfoam Keyboard"
         android:allowBackup="false"
         android:supportsRtl="true">
-        <activity android:name=".SettingsActivity" android:label="Melfoam Keyboard">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Melfoam Keyboard"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

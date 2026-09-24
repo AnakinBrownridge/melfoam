@@ -1,13 +1,20 @@
 # melfoam
 
-Melfoam is a deliberately small Android Input Method Service for Bare Launcher. It uses only platform APIs, a Holo theme, and a compact Java-built view (no support libraries, dictionary, network service, or background process).
+Melfoam is a compact Android keyboard designed for Bare Launcher and built to stay light on memory while still using a modern Android SDK target. The UI intentionally keeps the classic Holo look from the ICS-era without depending on heavy support libraries or a large background service.
+
+## Compatibility
+
+- Compile SDK: 35
+- Target SDK: 35
+- Min SDK: 21
+- Visual style: Holo Light
 
 ## Build
 
-Open this repository in Android Studio or run `./gradlew :app:assembleDebug` with Gradle installed. The app targets the legacy Android ICS API level (`minSdk 14`).
+Open this repository in Android Studio with the Android Gradle Plugin 8.5.x or use Gradle 8.7+ to build the app.
 
-Install the APK, open **Melfoam Keyboard**, enable it in Input Method settings, then choose it from the keyboard picker.
+Install the APK, open Melfoam Keyboard, enable the keyboard in system input settings, and select it from the keyboard chooser.
 
 ## Grammarly
 
-The **Grammarly** toolbar button uses Android's standard `ACTION_PROCESS_TEXT` contract. If a compatible Grammarly/editor activity is installed, Android offers it; otherwise the action safely does nothing. Melfoam does not collect, retain, or upload typed text and does not bundle Grammarly's proprietary SDK.
+The Grammarly button uses the Android `ACTION_PROCESS_TEXT` intent when a text editor or Grammarly-compatible app is available. Melfoam does not embed Grammarly's SDK or send text automatically.

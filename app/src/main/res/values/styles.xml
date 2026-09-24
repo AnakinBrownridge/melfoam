@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="android:style/Theme.Holo.Light">
-        <item name="android:fontFamily">sans</item>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
         <item name="android:colorAccent">#33B5E5</item>
         <item name="android:windowActionModeOverlay">true</item>
     </style>
